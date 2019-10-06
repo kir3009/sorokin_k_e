@@ -8,15 +8,15 @@ class Rational
 {
 public:
 	Rational() {}
-	explicit Rational(const double nu) :Rational(nu, 1){}
-	Rational( int numerator,int denumerator)
+	explicit Rational(const double nu) :Rational(nu, 1) {}
+	Rational(int numerator, int denumerator)
 	{
 		nu = numerator;
 		de = denumerator;
 		Minus();
 		Sokr();
 	}
-	void Sokr(int nu,int de)
+	void Sokr(int nu, int de)
 	{
 		int i;
 		if (nu < de) {
@@ -59,7 +59,7 @@ public:
 	friend Rational operator+(const Rational & a, const Rational & b);
 	friend Rational operator-(const Rational & a, const Rational & b);
 	friend Rational operator * (const Rational &a, const Rational &b);
-    friend Rational operator / (const Rational &a, const Rational &b);
+	friend Rational operator / (const Rational &a, const Rational &b);
 	std::ostream& writeTo(std::ostream& ostrm) const;
 	std::istream& readFrom(std::istream& istrm);
 	void Minus();
@@ -67,6 +67,8 @@ public:
 	const char line{ '/' };
 	int nu{ 0 };
 	int de{ 1 };
+	static const char leftBrace{ '{' };
+	static const char rightBrace{ '}' };
 };
 Rational operator+(const Rational& a, const Rational& b)
 {
@@ -115,6 +117,7 @@ Rational & Rational::operator+=(const Rational & rat)
 	nu = nu * rat.de + de * rat.nu;
 	de *= rat.de;
 	return *this;
+
 }
 Rational & Rational::operator-=(const Rational & rat)
 {
@@ -162,7 +165,7 @@ void Rational::Sokr()
 		}
 	}
 }
-inline std::ostream& operator<<(std::ostream& ostrm,Rational& rat)
+inline std::ostream& operator<<(std::ostream& ostrm, Rational& rat)
 {
 	return rat.writeTo(ostrm);
 }
@@ -175,6 +178,7 @@ bool testParse(const std::string& str) {
 	using namespace std;
 	istringstream istrm(str);
 	Rational z;
+	z.Sokr();
 	istrm >> z;
 	std::cout << z;
 	if (istrm.good()) {
@@ -188,26 +192,31 @@ bool testParse(const std::string& str) {
 
 int main()
 {
-	Rational a(1,-2);
-	Rational b(1, 10);
-	//testParse("2/3");
-	std::cout <<a;
+	Rational a(1, -10);
+	Rational b(3, 10);
+	a += b;
+	a.Sokr();
+	testParse("{3/6}");
+	std::cout << a;
+
 
 }
-std::istream & Rational::readFrom(std::istream & istrm) 
+std::istream & Rational::readFrom(std::istream & istrm)
 {
 	int numerator(0);
 	char line(0);
 	int denumerator(1);
-	istrm >> numerator >> line >> denumerator;
-		if (Rational::line == line)
-		{
-			nu = numerator;
-			de = denumerator;
-		}
-		else {
-			istrm.setstate(std::ios_base::failbit);
-		}
+	char leftBrace(0);
+	char rightBrace(0);
+	istrm >> leftBrace >> numerator >> line >> denumerator >> rightBrace;
+	if ((Rational::line == line) && (Rational::leftBrace == leftBrace) && (Rational::rightBrace == rightBrace))
+	{
+		nu = numerator;
+		de = denumerator;
+	}
+	else {
+		istrm.setstate(std::ios_base::failbit);
+	}
 	return istrm;
 }
 std::ostream & Rational::writeTo(std::ostream & ostrm) const
@@ -215,4 +224,3 @@ std::ostream & Rational::writeTo(std::ostream & ostrm) const
 	ostrm << nu << line << de;
 	return ostrm;
 }
-
