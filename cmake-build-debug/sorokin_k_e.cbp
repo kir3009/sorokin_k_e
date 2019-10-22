@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="sorokin_k_e"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\prj.lab\;CMake Files\prj.lab\complex\;CMake Files\prj.test\;CMake Files\prj.test\test_complex\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/sorokin_k_e/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/sorokin_k_e/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/sorokin_k_e/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="complex">
+				<Option output="D:/sorokin_k_e/cmake-build-debug/prj.lab/complex/complex.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/sorokin_k_e/cmake-build-debug/prj.lab/complex"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/sorokin_k_e/prj.lab"/>
+					<Add directory="D:/sorokin_k_e/prj.thirdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.lab\complex\Makefile VERBOSE=1 complex"/>
+					<CompileFile command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.lab\complex\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.lab\complex\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.lab\complex\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="complex/fast">
+				<Option output="D:/sorokin_k_e/cmake-build-debug/prj.lab/complex/complex.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/sorokin_k_e/cmake-build-debug/prj.lab/complex"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/sorokin_k_e/prj.lab"/>
+					<Add directory="D:/sorokin_k_e/prj.thirdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.lab\complex\Makefile VERBOSE=1 complex/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.lab\complex\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.lab\complex\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.lab\complex\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_complex">
+				<Option output="D:/sorokin_k_e/bin.win32.msvc.dbg/test_complex.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/sorokin_k_e/bin.win32.msvc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/sorokin_k_e/prj.lab"/>
+					<Add directory="D:/sorokin_k_e/prj.thirdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.test\test_complex\Makefile VERBOSE=1 test_complex"/>
+					<CompileFile command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.test\test_complex\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.test\test_complex\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.test\test_complex\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_complex/fast">
+				<Option output="D:/sorokin_k_e/bin.win32.msvc.dbg/test_complex.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/sorokin_k_e/bin.win32.msvc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/sorokin_k_e/prj.lab"/>
+					<Add directory="D:/sorokin_k_e/prj.thirdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.test\test_complex\Makefile VERBOSE=1 test_complex/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.test\test_complex\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.test\test_complex\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\sorokin_k_e\cmake-build-debug\prj.test\test_complex\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/sorokin_k_e/prj.lab/complex/complex.cpp">
+			<Option target="complex"/>
+		</Unit>
+		<Unit filename="D:/sorokin_k_e/prj.lab/complex/complex.h">
+			<Option target="complex"/>
+		</Unit>
+		<Unit filename="D:/sorokin_k_e/prj.test/test_complex/test_complex.cpp">
+			<Option target="test_complex"/>
+		</Unit>
+		<Unit filename="D:/sorokin_k_e/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/sorokin_k_e/cmake/build_prefix.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="D:/sorokin_k_e/prj.lab/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\prj.lab\"/>
+		</Unit>
+		<Unit filename="D:/sorokin_k_e/prj.lab/complex/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\prj.lab\complex\"/>
+		</Unit>
+		<Unit filename="D:/sorokin_k_e/prj.test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\prj.test\"/>
+		</Unit>
+		<Unit filename="D:/sorokin_k_e/prj.test/test_complex/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\prj.test\test_complex\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
