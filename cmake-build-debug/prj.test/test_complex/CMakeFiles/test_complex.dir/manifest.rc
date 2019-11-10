@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/sorokin_k_e/cmake-build-debug/prj.test/test_complex/CMakeFiles/test_complex.dir/embed.manifest"

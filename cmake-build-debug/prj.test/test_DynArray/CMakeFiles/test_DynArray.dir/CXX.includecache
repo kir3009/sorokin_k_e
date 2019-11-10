@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../prj.lab/DynArray/DynArray.h
+cstddef
+-
+
+D:/sorokin_k_e/prj.test/test_DynArray/test_DynArray.cpp
+iostream
+-
+DynArray/DynArray.h
+-
+

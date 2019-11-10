@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../prj.lab/rational/rational.h
+iostream
+-
+
+D:/sorokin_k_e/prj.test/test_rational/test_rational.cpp
+rational/rational.h
+-
+iostream
+-
+sstream
+-
+
